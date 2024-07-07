@@ -1,0 +1,54 @@
+Remove-Item -Recurse -Force .git (removes the sub directory of a repository in windows powershell)
+
+Commit contents:
+ID
+Message
+Date/time
+Author
+Complete Snapshot
+
+echo hello> file.txt (creates a file in the working directory)
+
+Staging files in Git is an important step in the version control process. The staging area, also known as the index, serves several critical functions that help manage changes effectively:
+
+Selective Commit:
+
+Staging allows you to carefully select which changes you want to include in your next commit. This is useful when you have made multiple changes but only want to commit some of them. For example, you might have fixed a bug and added a new feature in the same working directory. By staging only the bug fix, you can create a clean, focused commit that only addresses the bug.
+Atomic Commits:
+
+By staging files, you ensure that the commit is atomic, meaning it captures a complete and coherent set of changes. This is essential for maintaining the integrity of your commit history, making it easier to understand and manage later.
+Preview Changes:
+
+The staging area allows you to review what will go into the next commit. You can use commands like git status and git diff --staged to see the staged changes, helping to avoid mistakes and ensure that only the intended modifications are included.
+Incremental Workflow:
+
+The staging area supports an incremental workflow. You can gradually add changes to the staging area as you make them, then commit them all at once. This is particularly useful in large projects where you might be working on several files at once.
+Rollback Capability:
+
+Staging provides a buffer where you can decide to unstage files if you change your mind before committing. This flexibility allows you to refine what you commit and provides a way to correct mistakes before they become part of the commit history.
+Improved Collaboration:
+
+In collaborative environments, the staging area helps manage concurrent work by different team members. Each member can stage their changes independently, ensuring that commits are orderly and do not inadvertently include unrelated modifications.
+
+git status shows whats is in the staging area
+files show up as red if they are not staged
+
+git add . (all all the files in the directory to the staging area)
+git add *.txt  (a group of files to stage with certain extension patterns)
+git add filename  (specific file to add)
+
+files that are staged show up as green in the staging area
+if you modify one file, you have two originally staged files. Then you have a snapshot of the file that was changed
+A changed files has unstaged changes that need to be staged if you want to have those changes included in the staging area
+
+git commit -m""  committing something shows a message of the changes made before it is pushed and after it is staged
+
+committing best practices -> don't make commits too big.  Only record checkpoints.  real world commit 5 -10 commits a day 
+logically separate chain set.  make meaningful commit messages.  use past tense
+
+
+
+
+
+
+
