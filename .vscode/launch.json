@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "BruteForce/Brute.MergeSort",
+            "projectName": "BruteForce"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MetricsApplication<metrics>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.flighttest.metrics.MetricsApplication",
+            "projectName": "metrics",
+            "env": {
+                "DB_USERNAME": "root",
+                "DB_PASSWORD": "root"
+            },
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -46,6 +46,27 @@ git commit -m""  committing something shows a message of the changes made before
 committing best practices -> don't make commits too big.  Only record checkpoints.  real world commit 5 -10 commits a day 
 logically separate chain set.  make meaningful commit messages.  use past tense
 
+ls -Force opens all of the files in the directory and shows the hidden ones 
+
+Remove-Item -Recurse -Force .git will the .git directory and all of it contents
+
+git init will initialize the the .git directory again. 
+
+git add filename will stage the changes
+
+git commit -m "message here"  this will add a commit message
+
+a commit has several things that define it :
+ID
+Message
+Date/time
+Author
+Complete Snapshot
+
+Git will compress the contents
+Git will not store duplicate contents
+
+
 
 
 
