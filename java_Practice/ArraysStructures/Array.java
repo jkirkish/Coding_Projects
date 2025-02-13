@@ -32,7 +32,7 @@ public class Array {
             items[i] = items[i + 1];
         }
         count--;
-        items[count] = 0;
+        
     }
 
     public int indexOf(int item) {
